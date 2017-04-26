@@ -1,0 +1,42 @@
+<ion-side-menus>
+	
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar bar-positive">
+			<ion-nav-back-button>Voltar
+
+			</ion-nav-back-button>
+			<ion-nav-buttons side="left">
+				<button class="button button-icon button-clear ion-navicon" menu-toggle="center"></button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name="menuContent"></ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="left">
+		<ion-content>
+			<div class="list card">
+				<div class="item">
+					<img src="">
+				</div>
+				<div class="item item-body"></div>
+			</div>
+
+			<ion-list>
+				<ion-item menu-close href="#/app/dashboard">
+					<i class="icon ion-person"></i>
+					Perfil
+				</ion-item>
+				<ion-item menu-close href="#/app/listagem" >
+					<i class="icon ion-map"></i>
+					Explorar
+				</ion-item>
+
+			</ion-list>
+
+
+
+		</ion-content>
+	</ion-side-menu>
+	
+</ion-side-menus>
+</ion-view>
