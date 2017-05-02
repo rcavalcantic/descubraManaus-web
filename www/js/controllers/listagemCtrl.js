@@ -1,5 +1,6 @@
 angular.module('descubraManaus')
-.controller('listagemCtrl', function($scope, $state, $cordovaGeolocation, estabelecimentoAPI) {
+.controller('listagemCtrl', function($scope, $state, $cordovaGeolocation,
+ estabelecimentoAPI, $rootScope) {
 
   	$scope.estabelecimentos = [];
   var tamEst = 0;
@@ -70,13 +71,11 @@ angular.module('descubraManaus')
           position: latLng,
           icon: pin_blue
       });    
-
-        google.maps.event.addListener(marker, 'click', function() {
-        window.location.href = '#/app/detalhes';
-      });    
-
-
   }
+
+  google.maps.event.addListener(marker, 'click', function() {
+        window.location.href = '#/app/detalhes';
+      }); 
  
 
   }, function(error){
